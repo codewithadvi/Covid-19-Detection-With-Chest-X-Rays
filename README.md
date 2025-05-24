@@ -118,18 +118,6 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 🗂Project Structure
-.
-├── covid19-radiography-database.zip
-├── COVID-19_Radiography_Dataset/
-│   ├── COVID/
-│   └── Normal/
-├── Untitled0.ipynb     # Main notebook
-├── README.md
-
-
----
-
 ## Highlights
 
 - No deep learning or GPUs required
