@@ -55,6 +55,10 @@ HOG is an effective and lightweight technique that captures **edge structures**,
 5. **Block Normalization:** Groups of 2×2 cells are normalized to account for contrast differences
 6. **Feature Vector Construction:** All block histograms are concatenated into a single feature vector
 
+   <img width="746" alt="image" src="https://github.com/user-attachments/assets/92d83188-68c3-46d0-9eea-7ce0bfbeabc8" />
+
+<img width="742" alt="image" src="https://github.com/user-attachments/assets/b906511d-6ac5-4c12-aaa8-eabd71f72487" />
+
 ### HOG Parameters Used
 
 | Parameter           | Value         |
@@ -71,9 +75,24 @@ After feature extraction, the dataset is split into **training (80%)** and **tes
 
 ###  Models Trained
 
-- **Support Vector Machine (SVM)** with RBF Kernel  
-- **Random Forest Classifier**  
+- **Support Vector Machine (SVM)** with RBF Kernel
+
+<img width="865" alt="image" src="https://github.com/user-attachments/assets/36cae3c4-6536-46c2-a122-2a8bf5782990" />
+
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/dab0adb6-4d22-4f2c-b7b5-113ad09e88ee" />
+
+- **Random Forest Classifier**
+
+<img width="865" alt="image" src="https://github.com/user-attachments/assets/bf8a448d-8ce8-475e-a0ac-4fc0bc2a1f49" />
+
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/64982e42-fe8c-4969-b69e-00038e99ce05" />
+
+
 - **XGBoost Classifier**
+
+<img width="868" alt="image" src="https://github.com/user-attachments/assets/9324b3ad-57e3-48c1-ad96-059bb668fe9e" />
+
+<img width="520" alt="image" src="https://github.com/user-attachments/assets/2a5b1e74-9ab7-49bb-b218-a95572b9cf71" />
 
 These models were selected for their:
 - Robustness to overfitting
@@ -101,6 +120,12 @@ The following metrics were used to evaluate model performance:
 | Support Vector Machine | **97.30**    |
 | Random Forest          | 95.67        |
 | XGBoost                | 96.10        |
+
+<img width="593" alt="image" src="https://github.com/user-attachments/assets/5333c9a6-93f4-42f1-a6be-0e918116e72d" />
+
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/b5016b70-6f60-46e6-8f3a-70ceecf39bcf" />
+
+
 
 > **SVM achieved the highest accuracy**, indicating strong performance in distinguishing between COVID-19 and Normal chest X-rays using only handcrafted features from HOG.
 
