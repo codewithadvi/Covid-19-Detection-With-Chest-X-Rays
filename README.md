@@ -1,4 +1,4 @@
-# 🩻 COVID-19 Chest X-Ray Classification using HOG and Machine Learning
+#  COVID-19 Chest X-Ray Classification using HOG and Machine Learning
 
 This project aims to automatically **classify chest X-ray images** into two categories—**COVID-19 infected** and **Normal**—using a combination of **handcrafted features (HOG)** and traditional **machine learning algorithms** such as **Support Vector Machine (SVM)**, **Random Forest**, and **XGBoost**.
 
@@ -6,7 +6,7 @@ Unlike deep learning-based approaches, this solution demonstrates the effectiven
 
 ---
 
-## 📌 Motivation
+##  Motivation
 
 During the COVID-19 pandemic, medical imaging such as chest X-rays became a crucial tool for rapid screening and diagnosis. While deep learning methods can provide high accuracy, they require large annotated datasets and high computational power—resources that may not be readily available in every medical facility.
 
@@ -18,7 +18,7 @@ This approach is interpretable, fast, and efficient, making it ideal for real-ti
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Source:** [COVID-19 Radiography Database (Kaggle)](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
 - **Used Subsets:**
@@ -29,7 +29,7 @@ The dataset contains high-resolution grayscale images. Only the **COVID** and **
 
 ---
 
-## 🔍 Problem Statement
+## Problem Statement
 
 > **Objective:** To build an efficient binary classifier that can distinguish between COVID-infected and Normal chest X-rays with high accuracy using traditional machine learning.
 
@@ -40,9 +40,9 @@ The classifier should:
 
 ---
 
-## 🧠 Feature Extraction: HOG (Histogram of Oriented Gradients)
+##  Feature Extraction: HOG (Histogram of Oriented Gradients)
 
-### 🎯 Why HOG?
+###  Why HOG?
 
 HOG is an effective and lightweight technique that captures **edge structures**, **shapes**, and **gradients** in localized image patches. These are essential features in medical imaging, where abnormal lung textures or opacities can indicate disease.
 
@@ -55,7 +55,7 @@ HOG is an effective and lightweight technique that captures **edge structures**,
 5. **Block Normalization:** Groups of 2×2 cells are normalized to account for contrast differences
 6. **Feature Vector Construction:** All block histograms are concatenated into a single feature vector
 
-### ⚙️ HOG Parameters Used
+### HOG Parameters Used
 
 | Parameter           | Value         |
 |---------------------|---------------|
@@ -65,11 +65,11 @@ HOG is an effective and lightweight technique that captures **edge structures**,
 | Cells per Block     | (2, 2)        |
 | Block Normalization | `L2-Hys`      |
 
-## 🤖 Machine Learning Models
+##  Machine Learning Models
 
 After feature extraction, the dataset is split into **training (80%)** and **testing (20%)** sets. Feature scaling is applied using `StandardScaler` to ensure all features are on the same scale.
 
-### 📚 Models Trained
+###  Models Trained
 
 - **Support Vector Machine (SVM)** with RBF Kernel  
 - **Random Forest Classifier**  
@@ -83,7 +83,7 @@ These models were selected for their:
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 The following metrics were used to evaluate model performance:
 - **Confusion Matrix**
@@ -102,9 +102,9 @@ The following metrics were used to evaluate model performance:
 | Random Forest          | 95.67        |
 | XGBoost                | 96.10        |
 
-> ✅ **SVM achieved the highest accuracy**, indicating strong performance in distinguishing between COVID-19 and Normal chest X-rays using only handcrafted features from HOG.
+> **SVM achieved the highest accuracy**, indicating strong performance in distinguishing between COVID-19 and Normal chest X-rays using only handcrafted features from HOG.
 
-## 📈 Sample Classification Report (SVM)
+##  Sample Classification Report (SVM)
 
               precision    recall  f1-score   support
 
@@ -118,7 +118,7 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 🗂️ Project Structure
+## 🗂Project Structure
 .
 ├── covid19-radiography-database.zip
 ├── COVID-19_Radiography_Dataset/
@@ -130,7 +130,7 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 🚀 Highlights
+## Highlights
 
 - No deep learning or GPUs required
 - Lightweight and fast execution
@@ -139,7 +139,7 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 🧪 Future Improvements
+##  Future Improvements
 
 - Include other categories such as **Viral Pneumonia** and **Lung Opacity**
 - Experiment with deep learning models like **MobileNet** or **EfficientNet**
@@ -148,7 +148,7 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 🤝 Acknowledgements
+##  Acknowledgements
 
 - **Dataset**: Provided by Tawsifur Rahman on [Kaggle](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
 - **Libraries Used**:
@@ -160,7 +160,7 @@ weighted avg       0.97      0.97      0.97       200
 
 ---
 
-## 📌 Final Note
+##  Final Note
 
 This project showcases that with the right **feature engineering**, even traditional machine learning pipelines can achieve high performance in **image classification tasks**, particularly in the **medical domain**. It is ideal for:
 - **Edge devices**
